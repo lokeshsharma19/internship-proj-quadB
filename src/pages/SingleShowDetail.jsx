@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import styles from "./SingleShowDetail.module.css";
 import BookingForm from "../components/BookingForm";
+import Modal from "../components/UI/Modal";
 
 function SingleShowDetail() {
   const { state } = useLocation();
@@ -80,11 +81,13 @@ function SingleShowDetail() {
             {summary && <span dangerouslySetInnerHTML={{ __html: summary }} />}
           </p>
           {isFormOpen && (
-            <BookingForm
-              name={name}
-              setIsFormOpen={setIsFormOpen}
-              setIsBooked={setIsBooked}
-            />
+            <Modal setIsFormOpen={setIsFormOpen}>
+              <BookingForm
+                name={name}
+                setIsFormOpen={setIsFormOpen}
+                setIsBooked={setIsBooked}
+              />
+            </Modal>
           )}
           {!isBooked && !isFormOpen && (
             <button
