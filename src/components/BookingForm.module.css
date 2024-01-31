@@ -1,0 +1,30 @@
+.formContainer {
+  background-color: #d9d7d7;
+  width: 400px;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  border: 2px solid rgb(182, 110, 110);
+}
+.fillingBtn {
+  padding: 0.3rem;
+  margin: 0;
+  margin-bottom: 0.2rem;
+  border-radius: 0.5rem;
+  background-color: rgb(123, 213, 243);
+  padding: 0.5rem;
+  margin-top: 1rem;
+  border: none;
+  outline: none;
+}
+label {
+  margin: 0.3rem;
+}
+.formBtn {
+  margin: 1.5rem;
+  border-radius: 0.5rem;
+  background-color: rgb(123, 213, 243);
+  padding: 1rem;
+  margin-top: 1rem;
+  border: none;
+  outline: none;
+}
